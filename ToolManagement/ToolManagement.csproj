@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBEF0D2C-CC5F-423A-BF19-CA98A752B5FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ToolManagement</RootNamespace>
+    <AssemblyName>ToolManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Aftomat\Aftracx\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AftomatLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>61F414564B9B667B4153D90A51479BB5153FA853</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ToolManagement_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TooLManagementEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TooLManagementEntities\bin\TooLManagementEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="TouchscreenKeyboard">
+      <HintPath>..\..\ToolTracker_2017_01_24_1300\ToolTracker_2017_01_24_1300\ToolTacker\ToolTacker\TouchscreenKeyboard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddaNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddaNewItem.Designer.cs">
+      <DependentUpon>AddaNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategory.designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDepartment.designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemGroup.designer.cs">
+      <DependentUpon>AddItemGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewItem.designer.cs">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSupplier.designer.cs">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationMenu.Designer.cs">
+      <DependentUpon>ConfigurationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AddSupplierctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AddSupplierctrl.designer.cs">
+      <DependentUpon>AddSupplierctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Addusersctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Addusersctrl.designer.cs">
+      <DependentUpon>Addusersctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemsDisplayctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemsDisplayctrl.Designer.cs">
+      <DependentUpon>ItemsDisplayctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JobManagementCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\JobManagementCtrl.Designer.cs">
+      <DependentUpon>JobManagementCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToolSearchCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolSearchCtrl.designer.cs">
+      <DependentUpon>ToolSearchCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TouchScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TouchScreen.Designer.cs">
+      <DependentUpon>TouchScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Useralerts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Useralerts.Designer.cs">
+      <DependentUpon>Useralerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FingerPrintlogin.cs" />
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemManagement.Designer.cs">
+      <DependentUpon>ItemManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedItemdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletedItemdetails.Designer.cs">
+      <DependentUpon>DeletedItemdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ganeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ganeral.designer.cs">
+      <DependentUpon>Ganeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportDataFromExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportDataFromExcel.designer.cs">
+      <DependentUpon>ImportDataFromExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedDetals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssuedDetals.designer.cs">
+      <DependentUpon>IssuedDetals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueItem.Designer.cs">
+      <DependentUpon>IssueItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Job.Designer.cs">
+      <DependentUpon>Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobCreation.Designer.cs">
+      <DependentUpon>JobCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobDetails.Designer.cs">
+      <DependentUpon>JobDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyPad.designer.cs">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationDetails.Designer.cs">
+      <DependentUpon>LocationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGlobal.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsMenu.Designer.cs">
+      <DependentUpon>ReportsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetuenItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetuenItem.Designer.cs">
+      <DependentUpon>RetuenItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnItemHistroy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnItemHistroy.Designer.cs">
+      <DependentUpon>ReturnItemHistroy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnItemList.Designer.cs">
+      <DependentUpon>ReturnItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supliermenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supliermenu.Designer.cs">
+      <DependentUpon>Supliermenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supliers.Designer.cs">
+      <DependentUpon>Supliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionItemDetails.designer.cs">
+      <DependentUpon>TransactionItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserUpdate.Designer.cs">
+      <DependentUpon>UserUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawKit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawKit.Designer.cs">
+      <DependentUpon>WithdrawKit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddaNewItem.resx">
+      <DependentUpon>AddaNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemGroup.resx">
+      <DependentUpon>AddItemGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewItem.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSupplier.resx">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurationMenu.resx">
+      <DependentUpon>ConfigurationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AddSupplierctrl.resx">
+      <DependentUpon>AddSupplierctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Addusersctrl.resx">
+      <DependentUpon>Addusersctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ItemsDisplayctrl.resx">
+      <DependentUpon>ItemsDisplayctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\JobManagementCtrl.resx">
+      <DependentUpon>JobManagementCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToolSearchCtrl.resx">
+      <DependentUpon>ToolSearchCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TouchScreen.resx">
+      <DependentUpon>TouchScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Useralerts.resx">
+      <DependentUpon>Useralerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemManagement.resx">
+      <DependentUpon>ItemManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletedItemdetails.resx">
+      <DependentUpon>DeletedItemdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ganeral.resx">
+      <DependentUpon>Ganeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportDataFromExcel.resx">
+      <DependentUpon>ImportDataFromExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssuedDetals.resx">
+      <DependentUpon>IssuedDetals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueItem.resx">
+      <DependentUpon>IssueItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Job.resx">
+      <DependentUpon>Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobCreation.resx">
+      <DependentUpon>JobCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobDetails.resx">
+      <DependentUpon>JobDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyPad.resx">
+      <DependentUpon>KeyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDetails.resx">
+      <DependentUpon>LocationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsMenu.resx">
+      <DependentUpon>ReportsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetuenItem.resx">
+      <DependentUpon>RetuenItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnItemHistroy.resx">
+      <DependentUpon>ReturnItemHistroy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnItemList.resx">
+      <DependentUpon>ReturnItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supliermenu.resx">
+      <DependentUpon>Supliermenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supliers.resx">
+      <DependentUpon>Supliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionItemDetails.resx">
+      <DependentUpon>TransactionItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUpdate.resx">
+      <DependentUpon>UserUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawKit.resx">
+      <DependentUpon>WithdrawKit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Document\Aftomat_Help.pdf" />
+    <None Include="Document\MATRIX-TM_User_Guide_Version_5.0.pdf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ToolManagement_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AftomatLogo.ico" />
+    <Content Include="images\bg_bottom_to_top_green.png" />
+    <Content Include="images\bg_navi_menu_item_btm_tp.png" />
+    <Content Include="images\bg_navi_menu_item_tp_btm.png" />
+    <Content Include="images\bg_top_to_bottom_green.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\maximize.png" />
+    <Content Include="images\minimize.png" />
+    <Content Include="images\no_image.png" />
+    <Content Include="images\no_tool_image_bg_green.png" />
+    <Content Include="images\restore_down.png" />
+    <Content Include="images\tool_bar_bg2_green.png" />
+    <Content Include="images\tool_bar_bg_green.png" />
+    <Content Include="images\tool_image_bg_green.png" />
+    <Content Include="images\tool_tracker_search.png" />
+    <Content Include="images\used_tools_image.png" />
+    <None Include="Resources\a2.jpg" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\1conference-call-xxl.png" />
+    <None Include="Resources\5Item Management.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\6Jobs.png" />
+    <None Include="Resources\8report.png" />
+    <None Include="Resources\9supplier.png" />
+    <None Include="Resources\7data-configuration-xxl.png" />
+    <None Include="Resources\7help.png" />
+    <None Include="Resources\9log.png" />
+    <None Include="Resources\user4.png" />
+    <None Include="Resources\Bell.png" />
+    <None Include="Resources\new logo1.png" />
+    <None Include="Resources\1Search.png" />
+    <None Include="Resources\2search.png" />
+    <None Include="Resources\Excel_2013_logo.png" />
+    <None Include="Resources\PDF-Icon.jpg" />
+    <None Include="Resources\DEL.png" />
+    <None Include="Resources\Pic.jpg" />
+    <None Include="Resources\Pic1.jpg" />
+    <Content Include="Store Procedures\Sp_AllItemInfo.sql" />
+    <Content Include="Store Procedures\Sp_AllItemStatus.sql" />
+    <Content Include="Store Procedures\Sp_BindCategory.sql" />
+    <Content Include="Store Procedures\Sp_BinditemGroup.sql" />
+    <Content Include="Store Procedures\Sp_BindItemType.sql" />
+    <Content Include="Store Procedures\Sp_BindJob.sql" />
+    <Content Include="Store Procedures\Sp_BindSupplier.sql" />
+    <Content Include="Store Procedures\Sp_CreateJob.sql" />
+    <Content Include="Store Procedures\sp_CreateSupplier.sql" />
+    <Content Include="Store Procedures\Sp_DeleteItem.sql" />
+    <Content Include="Store Procedures\Sp_DeleteItemInfo.sql" />
+    <Content Include="Store Procedures\Sp_Drawer.sql" />
+    <Content Include="Store Procedures\Sp_GetLocations.sql" />
+    <Content Include="Store Procedures\Sp_InsertItemCategory.sql" />
+    <Content Include="Store Procedures\Sp_InsertItemDetails.sql" />
+    <Content Include="Store Procedures\Sp_InsertItemGroup.sql" />
+    <Content Include="Store Procedures\Sp_InsertItemType.sql" />
+    <Content Include="Store Procedures\Sp_InsertSupplier.sql" />
+    <Content Include="Store Procedures\Sp_InsertUser.sql" />
+    <Content Include="Store Procedures\sp_InsertUsers.sql" />
+    <Content Include="Store Procedures\Sp_ItemInfo.sql" />
+    <Content Include="Store Procedures\Sp_ItemisssuedDetails.sql" />
+    <Content Include="Store Procedures\Sp_ItemisssuedDetails_Sandeep2.sql" />
+    <Content Include="Store Procedures\Sp_ItemIssue.sql" />
+    <Content Include="Store Procedures\Sp_ItemReturn.sql" />
+    <Content Include="Store Procedures\Sp_ItemStatus.sql" />
+    <Content Include="Store Procedures\Sp_JobInfo.sql" />
+    <Content Include="Store Procedures\Sp_Location.sql" />
+    <Content Include="Store Procedures\Sp_login.sql" />
+    <Content Include="Store Procedures\sp_ProcesslogInfo.sql" />
+    <Content Include="Store Procedures\Sp_RestoreItem.sql" />
+    <Content Include="Store Procedures\Sp_ReturnItemdDetails.sql" />
+    <Content Include="Store Procedures\Sp_ReturnItemInfo.sql" />
+    <Content Include="Store Procedures\SP_SelectUsers.sql" />
+    <Content Include="Store Procedures\Sp_Suplier.sql" />
+    <Content Include="Store Procedures\Sp_SystemUsers.sql" />
+    <Content Include="Store Procedures\sp_TransactionInfo.sql" />
+    <Content Include="Store Procedures\Sp_UpdateItemDetails.sql" />
+    <Content Include="Store Procedures\Sp_UsersPrivilige.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToolBusinessLogiclayer\ToolControler.csproj">
+      <Project>{B710F5C8-0564-41DC-8C20-EE83C23B2506}</Project>
+      <Name>ToolControler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolDataAccessLayer\ToolDataManager.csproj">
+      <Project>{715D5489-54CA-4FB5-B66B-F84DD2B2A035}</Project>
+      <Name>ToolDataManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
